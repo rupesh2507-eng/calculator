@@ -22,12 +22,19 @@ btns.forEach((btn) => {
                 }
             }
         }else {
+            
             if (isCalculated) {
-                display.value = btn.innerText;
+                if ("+-*/%".includes(btn.innerText)) {
+                    display.value += btn.innerText;
+                } else {
+                    display.value = btn.innerText;
+                }
+
                 isCalculated = false;
             } else {
                 display.value += btn.innerText;
             }
+
         }
     })
 })
