@@ -4,7 +4,6 @@ let isCalculated = false;
 
 btns.forEach((btn) => {
     btn.addEventListener("click", () => {
-        console.log(btn.innerText);
 
         if(btn.innerText === "AC"){
             display.value = "";
@@ -36,7 +35,5 @@ btns.forEach((btn) => {
             }
 
         }
-    })
-})
-
-console.log(btns);
+    });
+});
