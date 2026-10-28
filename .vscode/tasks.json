@@ -1,0 +1,16 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Update Calculator",
+            "type": "shell",
+            "command": "${workspaceFolder}\\update.bat",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
